@@ -109,3 +109,6 @@ def __getattr__(attr_name: str) -> object:
 
 def __dir__() -> list[str]:
     return list(__all__)
+from langchain_core.utils.purity import analyze_bytecode_purity, enforce_stti_invariant
+
+__all__ += ["analyze_bytecode_purity", "enforce_stti_invariant"]
